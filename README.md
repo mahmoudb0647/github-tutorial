@@ -46,8 +46,11 @@ _If all steps are done correctly, your local repository now has a remote that yo
 
 ---
 ## Workflow & Commands
-
+``` git init```: initializes git in our directory (now called a repository) for version control
+```git commit -m "commit message"```: take a ‘snapshot’ of the files on the stage
 
 
 ---
 ## Rolling Back Changes
+- ``` rm -rf .git``` : unitialize empty Git repository 
+- 
