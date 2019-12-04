@@ -46,8 +46,23 @@ _If all steps are done correctly, your local repository now has a remote that yo
 
 ---
 ## Workflow & Commands
-
-
+ 1. Go into your local repsitory using ```cd```
+ 2. Make sure next to the file name on the command line it says ```(master)``` 
+ 3. In order to add stuff to the folder that we will be able to track using Git we will need a README file using the command ``` touch README.md ```
+ 4. The open the README file using the command ```c9 README.md```
+ 5. In the README file write anything then go back to the command line 
+ 6. In order to check the status of the files in the folder use the command ```git status``` which will show the files and if they are in red then they can't be commited yet or they arent ready for git to take a snapshot of them.
+ 7. Using the command ```git add .``` the readme file will be ready to be taken a screenshot of by git
+ 8. To double check if its ready use the command ```git status``` and if the readme file is in green , you are ready to go on and commit.
+ 9. Now in order to commit you will use this command ```git commit -m ""``` in between the quotation belongs a small note of what you are commiting. It should be short and simple.
+ 
 
 ---
 ## Rolling Back Changes
++ To undo any edits you use ```git checkout <file name>``` which discards all changes since last commit. 
++ To undo adding to the stage you use the command ```git reset <file name>``` which unstages the file.
++ In case you want to revert back to a certain commit you have made, you will need to ```git log``` , find the commit you want to revert to and copy the long commit ID, then in your command line use ``` git revert ``` then paste the commit ID.
+
+---
+## Error Handling
++ If you initialize git in the wrong directory you will need to ```cd``` into the directory and then use the ```rm -rf``` command which forcefully removes files but after it you will type "git" so it should look like this ```rm -rf git```.
